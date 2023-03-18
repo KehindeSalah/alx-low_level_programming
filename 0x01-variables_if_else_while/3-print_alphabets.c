@@ -7,22 +7,22 @@
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    /* Print lowercase letters */
-    for (i = 97; i <= 122; i++)
-    {
-        putchar(i);
-    }
+	/* Print lowercase letters */
+	for (i = 97; i <= 122; i++)
+	{
+		putchar(i);
+	}
 
-    /* Print uppercase letters */
-    for (i = 65; i <= 90; i++)
-    {
-        putchar(i);
-    }
+	/* Print uppercase letters */
+	for (i = 65; i <= 90; i++)
+	{
+		putchar(i);
+	}
 
-    /* Print newline character */
-    putchar('\n');
+	/* Print newline character */
+		putchar('\n');
 
-    return (0);
+	return (0);
 }
