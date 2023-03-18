@@ -13,14 +13,14 @@ int main(void)
 	for (i = 0; i < 16; i++)
 	{
 		if (i < 10)
-        {
-		c = i + '0'; /* convert int to corresponding char */
-        }
+		{
+			c = i + '0'; /* convert int to corresponding char */
+		}
 		else
-        {
-		c = i - 10 + 'a'; /* convert int to corresponding char */
-        }
-        putchar(c);
+		{
+			c = i - 10 + 'a'; /* convert int to corresponding char */
+		}
+		putchar(c);
 	}
 
 	putchar('\n');
