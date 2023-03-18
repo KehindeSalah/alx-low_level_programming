@@ -7,19 +7,20 @@
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    for (i = 0; i < 10; i++)
-    {
-        putchar(i + '0'); /* print digit character */
-        if (i != 9)
-        {
-            putchar(','); /* print comma character */
-            putchar(' '); /* print space character */
-        }
-    }
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0'); /* print digit character */
 
-    putchar('\n');
+		if (i != 9)
+		{
+			putchar(','); /* print comma character */
+			putchar(' '); /* print space character */
+		}
+	}
 
-    return (0);
+		putchar('\n');
+
+	return (0);
 }

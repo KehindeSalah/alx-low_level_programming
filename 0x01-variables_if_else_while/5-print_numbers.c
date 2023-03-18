@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    /* Print single digit numbers of base 10 */
-    for (i = 0; i < 10; i++)
-    {
-        putchar(i + '0');
-    }
+	/* Print single digit numbers of base 10 */
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
 
-    /* Print newline character */
-    putchar('\n');
+	/* Print newline character */
+	putchar('\n');
 
-    return (0);
+	return (0);
 }

@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    /* Print lowercase letters except q and e */
-    for (i = 97; i <= 122; i++)
-    {
-        if (i != 101 && i != 113)
-        {
-            putchar(i);
-        }
-    }
+	/* Print lowercase letters except q and e */
+	for (i = 97; i <= 122; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
 
-    /* Print newline character */
-    putchar('\n');
+	/* Print newline character */
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
