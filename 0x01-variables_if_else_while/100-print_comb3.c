@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-/*
+/**
  * main - advanced task
  *
  * Return: 0
  */
-
-int main(void);
+int main(void)
 {
 	int i, j;
 
