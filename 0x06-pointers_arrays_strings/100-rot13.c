@@ -1,41 +1,30 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * rot13 - Encodes a string using ROT13 substitution cipher.
- * @str: The string to be encoded.
+ * rot13 - encoder rot13
+ * @s: pointer to string params
  *
- * Return: A pointer to the encoded string.
+ * Return: *s
  */
-char *rot13(char *str)
+
+char *rot13(char *s)
 {
-	int len = 0;
-	char c;
 	int i;
+	int j;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (str[len])
-		len++;
-
-	for (i = 0; i < len; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		c = str[i];
-
-		if (c >= 'a' && c <= 'z')
+		for (j = 0; j < 52; j++)
 		{
-			c += 13;
-
-			if (c > 'z')
-				c -= 26;
+			if (s[i] == data1[j])
+			{
+				s[i] = datarot[j];
+				break;
+			}
 		}
-		else if (c >= 'A' && c <= 'Z')
-		{
-			c += 13;
-
-			if (c > 'Z')
-				c -= 26;
-		}
-
-		str[i] = c;
 	}
-
-	return (str);
+	return (s);
 }
